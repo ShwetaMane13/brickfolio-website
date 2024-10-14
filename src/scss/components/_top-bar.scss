@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar{
+    height: 90px;
+    display: flex;
+    gap: 15px;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $orange-soft;
+
+    &__buttons{
+        display: flex;
+        gap: 20px;
+
+        @include respond(desktop-small){
+            display: none;
+        }
+    }
+
+    &__input{
+        width: 865px;
+        height: 57px;
+        border-radius: 10px;
+        outline: none;
+        border: $border;
+
+        @include respond(desktop-small){
+            width: 500px;
+        }
+
+        @include respond(desktop-x-small){
+            width:400px;
+        }
+    }
+   
+}

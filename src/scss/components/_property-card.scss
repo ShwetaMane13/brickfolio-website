@@ -1,0 +1,104 @@
+.property-card {
+  //   width: 1086px;
+  height: 400px;
+  display: flex;
+  gap: 20px;
+  padding: 0 0 0 20px;
+  background-color: $white;
+  border-radius: 25px;
+  position: relative;
+
+  &__ready-to-move {
+    width: 133px;
+    height: 31px;
+    font-family: "Poppins";
+    font-size: 13px;
+    font-weight: 400;
+    position: relative;
+    left: 135px;
+    background-color: $orange-light;
+    padding: 5px 15px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    @include respond(desktop-small) {
+    //   left: 100px;
+    //   width: 61px;
+    //   font-size: 8px;
+    display: none;
+    }
+  }
+
+  &__rera {
+    margin-left: 10px;
+    background-color: #f3ffda;
+    font-family: "Poppins";
+    font-size: 10px;
+    font-weight: 400;
+    padding: 5px 20px 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #e1ffa0;
+    color: #00000080;
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &-heart {
+      position: absolute;
+      left: 285px;
+      top: 38px;
+    }
+  }
+
+  &__content {
+    // border: $border;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    @include respond(desktop-medium) {
+      width: 650px;
+    }
+
+    @include respond(desktop-small) {
+      width: 500px;
+      overflow: hidden;
+    }
+  }
+
+  &__header {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__property-name {
+    font-family: "Poppins";
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &--icon {
+      width: 12px;
+      height: 16px;
+    }
+
+    &--text {
+      font-family: "Poppins";
+      font-size: 16px;
+      font-weight: 400;
+      color: $text-gray-soft;
+    }
+  }
+
+
+}

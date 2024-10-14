@@ -1,0 +1,36 @@
+.brokerage-card{
+    background-color: $white;
+    border-radius: 20px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    // width: 546px;
+
+    &__heading{
+        font-family: "Poppins";
+        font-size: 38px;
+        font-weight: 400;
+        color: $orange;
+    }
+
+    &__span{
+        font-family: "Poppins";
+        font-size: 38px;
+        font-weight: 700;
+        color: $orange;
+    }
+
+    &__text{
+        // border: $border;
+        width: 70%;
+        font-family: "Poppins";
+        font-size: 18px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+   
+}

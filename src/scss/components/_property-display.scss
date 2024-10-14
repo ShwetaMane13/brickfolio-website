@@ -1,0 +1,52 @@
+.property-display{
+    background-color: $background;
+    padding: 40px;
+    // border: $border;
+
+    &__content{
+        // padding: 40px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2%;
+
+        @include respond(desktop-small){
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    &__card-container{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__header{
+        // border: $border;
+        padding-left: 20px;
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    &__breadcrumb{
+        font-family: "Poppins";
+        font-size: 25px;
+        font-weight: 500;
+        color: $text-gray;
+    }
+
+    &__heading{
+        font-family: "Poppins";
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    &__right-container{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
