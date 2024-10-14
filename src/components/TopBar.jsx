@@ -1,8 +1,9 @@
 import { Buttons } from "./common/Buttons";
+import { InputComponent } from "./InputComponent";
+
+import logo from "../assets/logo.svg";
 
 import { buttons } from "../constants";
-import logo from "../assets/logo.svg";
-import { InputComponent } from "./InputComponent";
 
 export const TopBar = () => {
   return (
@@ -15,7 +16,7 @@ export const TopBar = () => {
       </div>
       <div className="top-bar__buttons">
         {buttons.map((button) => (
-          <Buttons icon={button.icon} text={button.text} />
+          <Buttons key={button.text} icon={button.icon} text={button.text} />
         ))}
       </div>
     </div>

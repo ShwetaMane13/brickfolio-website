@@ -1,13 +1,12 @@
 .brokerage-card{
-    background-color: $white;
-    border-radius: 20px;
     height: 500px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 15px;
-    // width: 546px;
+    border-radius: 20px;
+    background-color: $white;
 
     &__heading{
         font-family: "Poppins";
@@ -24,7 +23,6 @@
     }
 
     &__text{
-        // border: $border;
         width: 70%;
         font-family: "Poppins";
         font-size: 15px;

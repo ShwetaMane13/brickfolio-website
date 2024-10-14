@@ -1,8 +1,9 @@
+import { PropertyConfiguration } from "./PropertyConfiguration";
+
 import location from "../assets/location.svg";
 import clock from "../assets/clock.svg";
 import ellipse from "../assets/ellipse.svg";
-import heart from "../assets/favorites.svg"
-import { PropertyConfiguration } from "./PropertyConfiguration";
+import heart from "../assets/favorites.svg";
 
 export const PropertyCard = (props) => {
   const { property } = props;
@@ -43,7 +44,7 @@ export const PropertyCard = (props) => {
           </section>
           <section className="property-configuration__container">
             {property.configuration.map((config) => (
-              <PropertyConfiguration config={config} />
+              <PropertyConfiguration key={config.id} config={config} />
             ))}
             <img src={ellipse} alt="" />
           </section>

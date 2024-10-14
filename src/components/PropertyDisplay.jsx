@@ -1,7 +1,8 @@
-import { data } from "../constants";
 import { BrokerageCard } from "./BrokerageCard";
 import { EnquiryForm } from "./EnquiryForm";
 import { PropertyCard } from "./PropertyCard";
+
+import { data } from "../constants";
 
 export const PropertyDisplay = () => {
   return (
@@ -17,7 +18,7 @@ export const PropertyDisplay = () => {
       <div className="property-display__content">
         <div className="property-display__card-container">
           {data.map((prop) => (
-            <PropertyCard property={prop} />
+            <PropertyCard key={prop.id} property={prop} />
           ))}
         </div>
         <div className="property-display__right-container">

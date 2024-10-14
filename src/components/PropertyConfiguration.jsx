@@ -14,13 +14,9 @@ export const PropertyConfiguration = (props) => {
           {config.area}
         </section>
         <section className="property-configuration__property-price">
-          <img src={tag} alt="" />
-          ₹{config.startingPrice}
+          <img src={tag} alt="" />₹{config.startingPrice}
         </section>
       </section>
-
-      
     </div>
-    
   );
-}; 
+};

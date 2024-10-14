@@ -13,11 +13,9 @@
     grid-template-columns: repeat(5, 1fr);
     gap: 15px;
     align-items: center;
-
   }
 
   &__tiles {
-    // width: 120px;
     height: 115px;
     padding: 0 35px 0 20px;
     display: flex;
@@ -35,8 +33,8 @@
       justify-content: flex-start;
     }
 
-    @include respond(desktop-small){
-        padding: 10px;
+    @include respond(desktop-small) {
+      padding: 10px;
     }
   }
 
@@ -55,20 +53,18 @@
   }
 
   &__property-price {
+    display: flex;
+    gap: 8px;
     font-family: "Poppins";
     font-size: 16px;
     font-weight: 600;
     color: $orange;
-    display: flex;
-    gap: 8px;
   }
 
   &__more-info {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-
-  
   }
 
   &__emi {
@@ -82,46 +78,45 @@
     background-color: $orange-soft;
 
     @include respond(desktop-small) {
-        width: 103px;
-        font-size: 10px;
+      width: 103px;
+      font-size: 10px;
     }
   }
 
   &__brokerage {
+    padding: 2px 15px;
     font-family: "Poppins";
     font-size: 14px;
     font-weight: 500;
-    padding: 2px 15px;
     border-radius: 8px;
     background-color: $orange-soft;
 
     @include respond(desktop-small) {
-        font-size: 10px;
+      font-size: 10px;
     }
   }
 
   &__logo-and-buttons {
     display: flex;
     justify-content: space-between;
-    // border: $border;
     margin: 25px 10px 0 0;
 
     @include respond(desktop-x-small) {
-        margin: 0;
+      margin: 0;
     }
   }
 
   &__logo {
+    height: 30px;
+    padding-right: 25px;
     display: flex;
     gap: 5px;
     align-items: center;
     border-right: 1px solid lightgray;
-    padding-right: 25px;
-    height: 30px;
 
-    &-text{
-        display: flex;
-        flex-direction: column;
+    &-text {
+      display: flex;
+      flex-direction: column;
     }
 
     &-heading {
@@ -131,36 +126,36 @@
     }
 
     &-sub-heading {
-        font-family: "Poppins";
-        font-size: 8px;
-        font-weight: 500;
-        color: $text-gray-soft;
+      font-family: "Poppins";
+      font-size: 8px;
+      font-weight: 500;
+      color: $text-gray-soft;
     }
 
     @include respond(desktop-small) {
-        border: none;
+      border: none;
     }
   }
 
-  &__duration{
+  &__duration {
     display: flex;
     align-items: center;
     gap: 10px;
 
-    &-image{
-        height: 21px;
-        width: 21px;
+    &-image {
+      height: 21px;
+      width: 21px;
     }
 
-    &-text{
-        font-family: "Poppins";
-        font-size: 12px;
-        font-weight: 500;
-        color: #a6a6a6;
+    &-text {
+      font-family: "Poppins";
+      font-size: 12px;
+      font-weight: 500;
+      color: #a6a6a6;
     }
 
     @include respond(desktop-small) {
-        display: none;
+      display: none;
     }
   }
 
@@ -178,33 +173,32 @@
   &__view-more {
     width: 125px;
     height: 40px;
-    border-radius: 6px;
-    border: $border;
     font-family: "Poppins";
     font-size: 15px;
     font-weight: 400;
+    border: $border;
+    border-radius: 6px;
 
     @include respond(desktop-small) {
-        width: 75px;
-        font-size: 11px;
+      width: 75px;
+      font-size: 11px;
     }
   }
 
   &__enquire-now {
     width: 125px;
     height: 40px;
-    border-radius: 6px;
-    background-color: $orange;
-    border: 1px solid #ff2e00;
     font-family: "Poppins";
     font-size: 14px;
     font-weight: 600;
+    border: 1px solid #ff2e00;
+    border-radius: 6px;
     color: $white;
+    background-color: $orange;
 
     @include respond(desktop-small) {
-        width: 90px;
-        font-size: 11px;
+      width: 90px;
+      font-size: 11px;
     }
   }
-
 }

@@ -7,9 +7,21 @@ export const EnquiryForm = () => {
       </section>
 
       <section className="enquiry-form__fields">
-        <input className="enquiry-form__input" type="text" placeholder="Enter your name"/>
-        <input className="enquiry-form__input" type="text" placeholder="Enter your number"/>
-        <input className="enquiry-form__input" type="text" placeholder="Enter your email"/>
+        <input
+          className="enquiry-form__input"
+          type="text"
+          placeholder="Enter your name"
+        />
+        <input
+          className="enquiry-form__input"
+          type="text"
+          placeholder="Enter your number"
+        />
+        <input
+          className="enquiry-form__input"
+          type="text"
+          placeholder="Enter your email"
+        />
       </section>
 
       <button className="enquiry-form__button">ENQUIRE NOW</button>

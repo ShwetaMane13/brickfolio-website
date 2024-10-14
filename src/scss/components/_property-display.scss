@@ -1,10 +1,8 @@
 .property-display{
     background-color: $background;
     padding: 40px;
-    // border: $border;
 
     &__content{
-        // padding: 40px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2%;
@@ -23,7 +21,6 @@
     }
 
     &__header{
-        // border: $border;
         padding-left: 20px;
         margin-bottom: 40px;
         display: flex;
